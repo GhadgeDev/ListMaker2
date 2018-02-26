@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.rushikesh.listmaker.Create_New">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TITLE"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/TITLE"
+        android:layout_marginTop="15dp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/TITLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/enter_title"
+        android:textSize="25sp"
+        android:inputType="textCapWords"/>
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TITLE"
+        android:layout_alignStart="@+id/TITLE"
+        android:layout_below="@+id/TITLE"
+        android:layout_marginTop="15dp"
+        android:text="@string/list"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/LIST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/enter_list"
+        android:inputType="textLongMessage"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/idBtnSave"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LIST"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/list"
+        android:layout_toRightOf="@+id/list"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="@string/save_button"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/idBtnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/idBtnSave"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/idBtnSave"
+        android:layout_toRightOf="@+id/idBtnSave"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="@string/view_button"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/idBtnRead"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/title_text" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

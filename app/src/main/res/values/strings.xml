@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">List Maker</string>
+    <string name="create_new">Create New</string>
+    <string name="open_existing">Open Existing</string>
+    <string name="title">Title :</string>
+    <string name="enter_title">Enter Title Here</string>
+    <string name="list">List :</string>
+    <string name="enter_list">Enter List Here</string>
+    <string name="save_button">Save</string>
+    <string name="view_button">View</string>
+    <string name="get_started">Get Started</string>
+    <string name="title_new">Title</string>
+    <string name="list_new">List</string>
+</resources>

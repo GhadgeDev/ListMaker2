@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.rushikesh.listmaker.MainActivity">
+
+    <Button
+        android:id="@+id/create_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:padding="15dp"
+        android:text="@string/create_new"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/open_existing"
+        android:layout_alignStart="@+id/open_existing"
+        android:layout_alignRight="@+id/open_existing"
+        android:layout_alignEnd="@+id/open_existing"
+        android:onClick="create_new"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"/>
+    <Button
+        android:id="@+id/open_existing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_new"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:text="@string/open_existing"
+        android:textSize="30sp"
+        android:onClick="open_existing"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
